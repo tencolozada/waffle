@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+    transition: scroll-behavior .4s ease-in;
+    line-height: 1.5;
+    
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background:rgba(5, 173, 240, 0.664) ;
+}
+
+::-webkit-scrollbar-thumb{
+    background: hsla(239, 100%, 67%, 1);
+    background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+    border-radius: 5px;
+}
+
+
+body{
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgb(6, 104, 104);
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+h1{
+    color: rgba(3, 79, 194, 0.747);
+    margin: 10px 0 20px 0;
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    cursor: pointer;
+}
+h4{
+    color: rgba(2, 70, 172, 0.747);
+    margin-bottom: 10px;
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    cursor: pointer;
+}
+p{  
+    color: rgba(217, 223, 228, 0.774);
+    font-size: .9rem;
+    margin-top: 10px;
+}
+nav{
+    padding: 10px;
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: antiquewhite;
+    
+    background-color: rgba(37, 37, 37, 0.863);
+    position: fixed;
+    z-index: 20;
+}
+
+nav .brand{
+    position: absolute;
+    cursor: pointer;
+    left: 20px;
+    top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(247, 215, 215);
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    transform: translateY(-130%);
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+    height: 100vh;
+    color: rgb(247, 215, 215);
+    background-color: rgba(37, 37, 37, 0.863);
+    transition: transform .4s ease-in;
+}
+
+nav ul li{
+   padding: 10px 0;
+}
+
+nav ul li:hover{
+    background-color: rgba(6, 105, 19, 0.74);
+    color: white;
+    transition: background .2s ease-in;
+    cursor: pointer;
+ }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav .burger{
+    height: 40px;
+    width: 40px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  
+}
+nav .burger div{
+    height: 5px;
+    width: 25px;
+    margin: 1px;
+    background-color: black;
+}
+
+
+.active{
+    transform: translateX(0%);
+    position: absolute;
+}
+.hide{
+    visibility: hidden;
+}
+
+
+
+
+
+
+.sections{
+    padding: 8% 10%;
+    border-bottom: 2px dotted orange;
+    
+}
+
+#home{
+
+}
+
+#home .container-home{
+    text-align: center;
+}
+
+#home .container-home h2{
+    color: orangered;
+    margin-bottom: 10PX;
+}
+
+
+#home .container-home img{
+    border-radius: 100%;
+    height: 280px;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+
+
+#home .container-home div .sc{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#home .container-home div .sc div{
+   height: 30px;
+   width: 30px;
+   background-color: orange;
+   border-radius: 100%;
+   cursor: pointer;
+   
+}
+
+
+
+#Projects{
+
+}
+
+#Projects .container-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#Projects .container-projects .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+#Projects .container-projects .row div{
+    height: 250px;
+    width: 100%;
+    background-color: rgba(26, 44, 33, 0.664);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+#Projects .container-projects .row div button{
+    padding: .4rem 1rem;
+    font-weight: bold;
+    font-size: .8rem;
+    color: orange;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(36, 87, 32, 0.377);
+    position: absolute;
+    bottom: 20px;
+}
+
+#Projects .container-projects .row div button:hover{
+    background-color: rgba(36, 87, 32, 0.678);
+    color: white;
+}
+
+#Skills{
+
+}
+
+#Skills .container-skill-p{
+    margin-top: 40px;
+
+}
+
+#Skills .container-skill-p button{
+    margin-top: 40px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(36, 87, 32, 0.377);
+    padding: .4rem 1rem;
+    font-size: .8rem;
+    color: orange;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+#Skills .container-skill-p button:hover{
+    background-color: rgba(36, 87, 32, 0.678);
+    color: white;
+}
+
+#Skills .container-skills{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px;
+}
+
+#Skills .container-skills .row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+#Skills .container-skills .row div{
+    height: 10px;
+    border-left: 5px solid orange;
+    width: 100%;
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+#Hobbies{
+
+}
+
+
+
+#Hobbies .container-hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#Hobbies .container-hobbies .row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+#Hobbies .container-hobbies .row .col{
+    display: flex;
+    flex-direction: column;
+}
+#Hobbies .container-hobbies .row .col img{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+#Hobbies .container-hobbies .row .col button{
+    margin: 20px 0;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(36, 87, 32, 0.377);
+    padding: .4rem 1rem;
+    font-size: .8rem;
+    color: orange;
+    outline: none;
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Footer{
+    background-color: rgba(255, 68, 0, 0.123);
+}
